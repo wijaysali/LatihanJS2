@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>Belajar this</title>
+	</head>
+	<body>
+		
+		<p></p>
+		<p></p>
+		
+		<script>
+         var orang = {
+            name: 'Budi',
+            logNama: function() {
+            console.log(this.name);
+        },
+            logNamaDenganArrow: () => {
+            console.log(this.name);
+        }
+    };
+ 
+orang.logNama();
+orang.logNamaDenganArrow();
+		</script>
+		
+	</body>
+	
+</html>

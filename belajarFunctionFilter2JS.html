@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title> Belajar Filter javascript</title>
+</head>
+<body>
+
+<p>Filter Ikan</p>
+
+<button onclick="myFunction()">Filter</button>
+
+<p id="demo"></p>
+
+     <script>
+            
+            let animals = [
+                {name: "Fluffy", species: "cat"},
+                {name: "Carlo", species: "dog"},
+                {name: "Nemo", species: "fish"},
+                {name: "Hamilton", species: "dog"},
+                {name: "Dory", species: "fish"},
+                {name: "Ursa", species: "cat"}
+            ];
+            
+          
+            function cekikan(fish) {
+                let fish = [];
+                    for(let i = 0; i < animals.length; i++) {
+                    if (animals[i].species === 'fish') {
+                    fish.push(animals[i]);
+                     }
+                }
+            }
+            
+            //
+            function myFunction() {
+                document.getElementById("demo").innerHTML = animals.filter(cekikan);
+            }
+    </script>
+
+
+</body>
+</html>
+
+Jadi method filter menerima hanya satu parameter, 
+fungsi untuk melakukan filter terhadap array of animals. 
+Dan fungsi filter diatas akan menghasilkan array baru yang 
+isinya ada dua yaitu kedua species ikan: Nemo dan Dory. 
+Dengan method filter, bukan saja kode kita menjadi lebih singkat akan tetapi juga 
+kode kita menjadi lebih sederhana dan mudah dimengerti.

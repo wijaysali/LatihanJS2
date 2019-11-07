@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Belajar Array String & Number - Mengubah nilai array</title>
+	</head>
+	<body>
+		
+		<p></p>
+		<p></p>
+		
+		<script>
+			let dataArray = ["Kode", 20, 5, "JavaScript"];
+			document.getElementsByTagName("p")[0].innerHTML = dataArray;
+			
+			dataArray[0] = "React JS"; //Mengubah data array pada nomor index 3
+			document.getElementsByTagName("p")[1].innerHTML = dataArray;
+		</script>
+		
+	</body>
+	
+</html>
+
+//pada baris 14 : mengganti nilai atau data array pada nomor index 3 yang awalnya “Kode” menjadi “Belajar JS”.
+//baris nomor 15 saat nilai array di print hasilnya sudah berubah.

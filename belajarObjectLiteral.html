@@ -1,0 +1,66 @@
+<!-- //Object Literal adalah salah satu struktur data yang ada di bahasa pemrograman JavaScript. 
+//Struktur data ini memungkinkan kalian untuk menyimpan lebih dari satu value di dalam sebuah
+variable. 
+//Mungkin terdengar mirip dengan array yang sudah kalian pelajari sebelumnya, 
+lalu kenapa kita perlu struktur data satu ini? -->
+
+<html>
+	<head>
+		<title>Belajar Object Literal</title>
+	</head>
+	<body>
+		<script>
+			let people = [{
+                // ["Imran", "Native", "+6281912344321", "Jl. Sultan Iskandar Muda no. 07"];
+                // ["Faby","React", "+6281122223333", "Jl. Sultan Iskandar Muda no. 17"]
+                firstName : "Imran",
+                lastName : "Native",
+                Phone : "+6281912344321",
+                Address : "Jl. Sultan Iskandar Muda no. 07",
+            }
+        ];
+             
+            // {
+            //     firstName : "Faby",
+            //     lastName : "React",
+            //     Phone : "+6281122223333",
+            //     Address : "Jl. Sultan Iskandar Muda no. 17",
+            // };
+
+            // {
+            //     firstName : "artmand",
+            //     lastName : "Javascript",
+            //     Phone : "+6281912344300",
+            //     Address : "Jl. Sultan Iskandar Muda no. 27",
+            // };
+            
+            console.log(people[0].firstName);
+            console.log(people[0].lastName);
+
+            // console.log(people["firstName"]);
+            // console.log(people["lastName"]);
+            
+		</script>
+		
+	</body>
+	
+</html>
+
+<!-- we already have : 
+[0] 1. firstName
+[1] 2. LastName
+[2] 3. Phone
+[3] 4. Address
+
+trick : kita tidak bisa melewatkan/mengosongkan 1 index. 
+        case : jika ingin menambahkan 1 array
+
+solution : Object Literal
+{
+    [key]=[value]
+}
+
+Yang membedakan object dengan array adalah key. 
+Kalian HARUS menambahkan key di setiap value yang kalian miliki di dalam suatu object, jika tidak ada key maka 
+program akan error saat dijalankan. 
+Value bisa kalian isi dengan tipe data apapun, termasuk Array dan Object itu sendiri! -->

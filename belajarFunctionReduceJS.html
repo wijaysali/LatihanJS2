@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title> Belajar reduce javascript</title>
+</head>
+<body>
+     <script>
+       var bali = [
+            { regency:'Jembrana', population:114863 },
+            { regency:'Tabanan', population:209308 },
+            { regency:'Badung', population:277536 },
+            { regency:'Gianyar', population:208443 },
+            { regency:'Klungkung', population:79233 },
+            { regency:'Bangli', population:106166 },
+            { regency:'Karangasem', population:193787 },
+            { regency:'Buleleng', population:294418 },
+            { regency:'Denpasar', population:403292 }
+        ];
+
+        var sum = bali.reduce(function(val, element) {
+            return val + element.population;
+        }, 0);
+
+        console.log(sum) 
+
+    </script>
+
+
+</body>
+</html>
+
+Reduce biasa digunakan untuk : Mengakumulasikan atau mengurangi nilai berdasarkan elemen di dalam array.
+Mirip seperti map() , 
+fungsi ini melintasi array dari kiri ke kanan dan 
+memanggil fungsi callback ke setiap elemen.
+Nilai yang di kembalikan adalah berupa akumulasi nilai melalui tiap callback. 
+Setelah semua elemen dilintasi, reduce() akan mengembalikan nilai akumulasi.
+
+Pada dasarnya reduce berfungsi untuk menggabungkan, 
+tetapi menggabungkan disini memiliki banyak arti. 
+Salah satunya, jika kita akan menjumlahkan semua nilai dalam array.

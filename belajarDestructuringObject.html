@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<title>Belajar Destructuring Object</title>
+	</head>
+	<body>
+		
+		<p></p>
+		<p></p>
+		
+		<script>
+			// let me = {name: "Imran", age: 20};
+            // let {name, age} = me;
+            //     console.log(name);
+            //     console.log(age); 
+
+            // let me = {name: "Imran", age: 20};
+            // let {name: nama, age: umur} = me;
+            // console.log(nama); 
+            // console.log(umur); 
+
+            const user = {};
+            user.name = 'Adi Nugroho';
+            user.handle = '@adinugroho';
+            user.places = 'Jakarta, Indonesia';
+
+            const { name, handle, places } = user;
+            console.log(name, handle, places );
+
+            // const getUser = () => 
+            // {
+            //  return {
+            //     name: 'Adi Nugroho',
+            //     handle: '@adinugroho',
+            //     places: 'Jakarta, Indonesia'
+            //  };
+
+            //  const { name, handle, places } = getUser();
+            //  console.log(name, handle, places );
+            // }
+		</script>
+		
+	</body>
+	
+</html>

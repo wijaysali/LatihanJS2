@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title> Belajar Filter javascript</title>
+</head>
+<body>
+
+<p>Filter Umur</p>
+
+<button onclick="myFunction()">Filter</button>
+
+<p id="demo"></p>
+
+     <script>
+            //array umur
+            let umur = [20, 30, 40, 45];
+            
+            //
+            function cekumur(age) {
+                return age >= 22;
+            }
+            
+            //
+            function myFunction() {
+                document.getElementById("demo").innerHTML = umur.filter(cekumur);
+            }
+    </script>
+
+
+</body>
+</html>
